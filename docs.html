@@ -256,4 +256,134 @@
                                 <td>html</td>
                                 <td>string</td>
                                 <td>for action=build_html</td>
-                                <td>HTML content</
+                                <td>HTML content</td>
+                            </tr>
+                            <tr>
+                                <td>url</td>
+                                <td>string</td>
+                                <td>for action=build_url</td>
+                                <td>Website URL</td>
+                            </tr>
+                            <tr>
+                                <td>zip_file</td>
+                                <td>file</td>
+                                <td>for action=build_zip</td>
+                                <td>ZIP file</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Response</h4>
+                    <pre><code class="language-json">{
+    "success": true,
+    "download_url": "/download.php?file=lifx_12345.apk",
+    "file_size": 3145728,
+    "filename": "MyApp.apk"
+}</code></pre>
+                </section>
+
+                <!-- Permissions -->
+                <section id="android-permissions" class="doc-section">
+                    <h2>🔐 Android Permissions</h2>
+                    <p>Berikut daftar permission yang tersedia:</p>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Permission</th>
+                                <th>Deskripsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INTERNET</td>
+                                <td>Akses internet (wajib untuk webview)</td>
+                            </tr>
+                            <tr>
+                                <td>WRITE_EXTERNAL_STORAGE</td>
+                                <td>Menyimpan file ke storage</td>
+                            </tr>
+                            <tr>
+                                <td>CAMERA</td>
+                                <td>Akses kamera</td>
+                            </tr>
+                            <tr>
+                                <td>ACCESS_FINE_LOCATION</td>
+                                <td>Lokasi GPS</td>
+                            </tr>
+                            <tr>
+                                <td>RECORD_AUDIO</td>
+                                <td>Rekam suara</td>
+                            </tr>
+                            <tr>
+                                <td>READ_CONTACTS</td>
+                                <td>Baca kontak</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" class="doc-section">
+                    <h2>❓ Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Apakah ini benar-benar menghasilkan APK real?</h3>
+                        <p>Ya, 100% real. Kami menggunakan Android SDK asli untuk mengkompilasi kode menjadi APK yang bisa diinstall di perangkat Android.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Berapa lama proses build?</h3>
+                        <p>Rata-rata 30-60 detik, tergantung kompleksitas HTML dan ukuran file.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Apakah APK yang dihasilkan sudah di-sign?</h3>
+                        <p>Ya, semua APK di-sign dengan keystore kami sehingga siap diinstall dan didistribusikan.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Bisa membuat APK tanpa koneksi internet?</h3>
+                        <p>Proses build memerlukan koneksi internet karena menggunakan server kami. Namun APK yang sudah di-download bisa diinstall offline.</p>
+                    </div>
+                </section>
+
+                <!-- Support -->
+                <section id="support" class="doc-section">
+                    <h2>📞 Support</h2>
+                    <p>Butuh bantuan? Hubungi kami melalui:</p>
+                    
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <i class="fab fa-telegram"></i>
+                            <h3>Telegram</h3>
+                            <p>@lifxcodetZ</p>
+                        </div>
+                        <div class="support-card">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <p>/lifxcodetZ</p>
+                        </div>
+                        <div class="support-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>support@lifx.com</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 LIFX Web2APK. Created by @lifxcodetZ</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/docs.js"></script>
+</body>
+</html>
