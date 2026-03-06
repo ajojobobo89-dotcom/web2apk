@@ -64,17 +64,3 @@ VERSION 1.0.0 • WELCOME TO MY REPO • LIFXCODETZ
 </p>
 
 ---
-
-**Efek glitch dark ini:**
-- RGB shift sederhana (merah, biru, hijau, cyan, magenta flicker).
-- Transform geser kecil + text-shadow glow.
-- Loop cepat (1.5s) biar keliatan hidup tanpa overload.
-- Warna cyan base + shadow magenta → vibe dark cyber neon.
-- Tanpa pseudo-element → minim risiko invalid CSS.
-
-Commit & push → buka repo di browser incognito (biar no cache). Kalau masih plain text:
-- Pastiin tidak ada spasi/tab aneh di dalam `<style>`.
-- Test di https://markdownlivepreview.com dulu (paste seluruh Markdown).
-- Kalau repo private → set public sementara.
-
-Kalau ini work (glitch jalan, badge rapi), kita bisa tambah efek lebih gila nanti. Kalau masih error, screenshot preview GitHub terbaru + paste **raw** README.md (buka repo → README → klik Raw → copy semua). Gue debug lagi sampe beres, bro. Jangan nyerah — ini harusnya fix sekarang! ⚡💀
