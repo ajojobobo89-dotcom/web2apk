@@ -1,0 +1,380 @@
+/* Documentation Page Specific Styles */
+
+.docs-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Sidebar */
+.docs-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.sidebar-search {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-search i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-400);
+}
+
+.sidebar-search input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.sidebar-search input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+}
+
+/* Docs Navigation */
+.docs-nav {
+    margin-top: 1rem;
+}
+
+.nav-section {
+    margin-bottom: 1.5rem;
+}
+
+.nav-section h4 {
+    color: var(--gray-800);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-section h4 i {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.nav-section ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.nav-section li {
+    margin-bottom: 0.5rem;
+}
+
+.nav-section a {
+    color: var(--gray-600);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.25rem 0;
+}
+
+.nav-section a:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.nav-section a.active {
+    color: var(--primary);
+    font-weight: 500;
+    border-left: 2px solid var(--primary);
+    padding-left: 0.5rem;
+}
+
+/* Main Content */
+.docs-content {
+    min-width: 0;
+}
+
+.doc-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 100px;
+}
+
+.doc-section h1 {
+    margin-bottom: 1rem;
+    color: var(--gray-900);
+}
+
+.doc-section h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.doc-section h3 {
+    margin: 1.5rem 0 1rem;
+    color: var(--gray-800);
+}
+
+.doc-section h4 {
+    margin: 1rem 0 0.5rem;
+    color: var(--gray-700);
+}
+
+.doc-section p {
+    margin-bottom: 1rem;
+    color: var(--gray-600);
+    line-height: 1.7;
+}
+
+.doc-section ul,
+.doc-section ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--gray-600);
+}
+
+.doc-section li {
+    margin-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--gray-700);
+    margin-bottom: 1.5rem;
+}
+
+/* Steps Vertical */
+.steps-vertical {
+    margin: 2rem 0;
+}
+
+.step-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--gray-50);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    margin-bottom: 0;
+}
+
+/* Code Blocks */
+pre {
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    overflow: auto;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.875rem;
+}
+
+:not(pre) > code {
+    background: var(--gray-50);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    color: var(--primary);
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    padding: 0.75rem;
+    background: var(--gray-50);
+    font-weight: 600;
+    color: var(--gray-700);
+    border: 1px solid var(--gray-200);
+}
+
+.table td {
+    padding: 0.75rem;
+    border: 1px solid var(--gray-200);
+    color: var(--gray-600);
+}
+
+.table tr:hover {
+    background: var(--gray-50);
+}
+
+/* Tips */
+.tip {
+    background: #dbeafe;
+    border-left: 4px solid var(--primary);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.tip i {
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+/* FAQ */
+.faq-item {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: var(--gray-50);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow);
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.faq-item h3:hover {
+    text-decoration: underline;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+}
+
+/* Support Grid */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.support-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.support-card i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.support-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.support-card p {
+    color: var(--gray-600);
+    margin-bottom: 0;
+}
+
+/* Alert variations */
+.alert-info {
+    background: #dbeafe;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
+}
+
+.alert-success {
+    background: #d1fae5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+}
+
+.alert-warning {
+    background: #fef3c7;
+    border: 1px solid #fde68a;
+    color: #92400e;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .docs-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .docs-sidebar {
+        position: static;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .step-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print styles */
+@media print {
+    .docs-sidebar {
+        display: none;
+    }
+    
+    .docs-container {
+        grid-template-columns: 1fr;
+    }
+}
