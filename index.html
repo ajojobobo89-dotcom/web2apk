@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFX Web2APK - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-blue.png" alt="LIFX">
+                <span>LIFX Web2APK</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="builder.html"><i class="fas fa-cogs"></i> Builder</a></li>
+                <li><a href="docs.html"><i class="fas fa-book"></i> Dokumentasi</a></li>
+                <li><a href="status.html"><i class="fas fa-chart-bar"></i> Status</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Convert HTML ke APK <span class="gradient-text">Instan</span></h1>
+                <p>Ubah website atau HTML kamu menjadi aplikasi Android nyata dalam hitungan detik. 100% real APK, bukan simulasi.</p>
+                <div class="hero-buttons">
+                    <a href="builder.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Mulai Sekarang
+                    </a>
+                    <a href="docs.html" class="btn btn-outline">
+                        <i class="fas fa-book"></i> Pelajari Dulu
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-illustration.svg" alt="Hero">
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-file-code"></i></div>
+                    <div class="stat-value" id="totalBuilds">127,432</div>
+                    <div class="stat-label">Total APK Dibuat</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-value" id="todayBuilds">5,847</div>
+                    <div class="stat-label">Hari Ini</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-value" id="activeUsers">12,345</div>
+                    <div class="stat-label">Pengguna Aktif</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <div class="stat-value" id="rating">4.8/5</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features-section">
+            <h2 class="section-title">Kenapa Pilih LIFX?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Super Cepat</h3>
+                    <p>Build APK dalam 30-60 detik. Optimasi server membuat proses kompilasi sangat cepat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>100% Real</h3>
+                    <p>Menggunakan Android SDK asli. APK bisa langsung diinstall di semua perangkat Android.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-code"></i></div>
+                    <h3>Multi Format</h3>
+                    <p>Support HTML langsung, URL website, atau upload ZIP dengan asset lengkap.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Kustomisasi</h3>
+                    <p>Atur icon, splash screen, permissions, dan semua konfigurasi APK.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-database"></i></div>
+                    <h3>Penyimpanan</h3>
+                    <p>History build tersimpan. Download ulang APK kapanpun.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Build</h3>
+                    <p>Semua build diproses di server. Tidak perlu install Android SDK lokal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <h2 class="section-title">Cara Kerja</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Upload HTML</h3>
+                        <p>Paste kode HTML, masukkan URL, atau upload file ZIP</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Konfigurasi</h3>
+                        <p>Atur nama app, icon, permissions sesuai kebutuhan</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Build APK</h3>
+                        <p>Klik generate, tunggu 30-60 detik, APK siap download</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2 class="section-title">Apa Kata Mereka</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Mantap banget! Cuma 45 detik jadi APK. Langsung bisa diinstall di HP."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar1.png" alt="User">
+                        <div>
+                            <h4>Andi Pratama</h4>
+                            <p>Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Hasil APK-nya ringan dan responsive. Sangat recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar2.png" alt="User">
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <p>Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Supportnya cepat. Ada bug langsung dibenerin. Top banget!"</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar3.png" alt="User">
+                        <div>
+                            <h4>Citra Dewi</h4>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Siap Membuat APK?</h2>
+                <p>Ubah website kamu jadi aplikasi Android sekarang juga. Gratis!</p>
+                <a href="builder.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-arrow-right"></i> Mulai Build
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 LIFX Web2APK. Created by @lifxcodetZ</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+</html>
