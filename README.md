@@ -1,7 +1,7 @@
 <p align="center">
   <svg width="100%" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
-      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: monospace; text-align: center;">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: monospace; text-align: center; width: 100%; height: 100%;">
         <style>
           @keyframes glitch-simple {
             0% { transform: translate(0px, 0px); text-shadow: 2px 0 red, -2px 0 cyan; }
@@ -15,6 +15,8 @@
             font-weight: bold;
             color: cyan;
             animation: glitch-simple 1.8s infinite linear;
+            display: inline-block;
+            margin: 0;
           }
         </style>
         <h1 class="glitch">LIFXCODETZ</h1>
