@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFX Web2APK - Profile</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-blue.png" alt="LIFX">
+                <span>LIFX Web2APK</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="builder.html"><i class="fas fa-cogs"></i> Builder</a></li>
+                <li><a href="docs.html"><i class="fas fa-book"></i> Dokumentasi</a></li>
+                <li><a href="status.html"><i class="fas fa-chart-bar"></i> Status</a></li>
+                <li><a href="profile.html" class="active"><i class="fas fa-user"></i> Profil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1><i class="fas fa-user-circle"></i> Profil Pengguna</h1>
+            <p>Kelola akun dan preferensi Anda</p>
+        </div>
+
+        <!-- Profile Grid -->
+        <div class="profile-grid">
+            <!-- Left Column - Avatar & Info -->
+            <div class="profile-left">
+                <div class="card">
+                    <div class="profile-avatar">
+                        <div class="avatar-container">
+                            <img src="assets/images/default-avatar.png" alt="Avatar" id="avatarPreview">
+                            <div class="avatar-overlay">
+                                <i class="fas fa-camera"></i>
+                                <span>Change</span>
+                            </div>
+                            <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+                        </div>
+                        <h2 id="displayName">John Doe</h2>
+                        <p class="text-muted">@johndoe</p>
+                    </div>
+
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">127</span>
+                            <span class="stat-label">Total Builds</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3</span>
+                            <span class="stat-label">API Keys</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-contact">
+                        <h4>Kontak</h4>
+                        <p><i class="fas fa-envelope"></i> john@example.com</p>
+                        <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
+                        <p><i class="fab fa-telegram"></i> @johndoe</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Settings -->
+            <div class="profile-right">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-user-edit"></i> Edit Profile</h3>
+                    </div>
+
+                    <form id="profileForm">
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label>Nama Depan</label>
+                                <input type="text" value="John" id="firstName">
+                            </div>
+                            <div class="form-group half">
+                                <label>Nama Belakang</label>
+                                <input type="text" value="Doe" id="lastName">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" value="johndoe" id="username">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="john@example.com" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nomor Telepon</label>
+                            <input type="tel" value="+6281234567890" id="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Bio</label>
+                            <textarea id="bio" rows="3">Android developer and web enthusiast. Love creating mobile apps.</textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Simpan Perubahan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- API Keys Section -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-key"></i> API Keys</h3>
+                        <button class="btn btn-sm btn-primary" onclick="generateNewKey()">
+                            <i class="fas fa-plus"></i> Generate New
+                        </button>
+                    </div>
+
+                    <div class="api-keys-list">
+                        <div class="api-key-item">
+                            <div class="key-info">
+                                <h4>Production Key</h4>
+                                <code>lifx_prod_7x8f9h2j3k4l5p6q</code>
+                                <span class="badge-success">Active</span>
+                            </div>
+                            <div class="key-actions">
+                                <span class="key-usage">Used 1,234 times</span>
+                                <button class="btn-icon" onclick="copyKey('lifx_prod_7x8f9h2j3k4l5p6q')">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="btn-icon" onclick="revokeKey('prod')">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="api-key-item">
+                            <div class="key-info">
+                                <h4>Development Key</h4>
+                                <code>lifx_dev_a1b2c3d4e5f6g7h8</code>
+                                <span class="badge-warning">Testing</span>
+                            </div>
+                            <div class="key-actions">
+                                <span class="key-usage">Used 56 times</span>
+                                <button class="btn-icon" onclick="copyKey('lifx_dev_a1b2c3d4e5f6g7h8')">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="btn-icon" onclick="revokeKey('dev')">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preferences -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-sliders-h"></i> Preferences</h3>
+                    </div>
+
+                    <div class="preferences-list">
+                        <div class="preference-item">
+                            <div class="pref-info">
+                                <h4>Default Build Method</h4>
+                                <p>Pilih metode build default untuk semua proyek</p>
+                            </div>
+                            <select id="defaultMethod" class="pref-control">
+                                <option value="web2apk" selected>Web2APK.com (Fast)</option>
+                                <option value="appyet">AppYet.com (Stable)</option>
+                                <option value="mit">MIT App Inventor</option>
+                            </select>
+                        </div>
+
+                        <div class="preference-item">
+                            <div class="pref-info">
+                                <h4>Email Notifications</h4>
+                                <p>Dapatkan notifikasi via email saat build selesai</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="emailNotif" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <
