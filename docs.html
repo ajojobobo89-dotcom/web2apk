@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFX Web2APK - Dokumentasi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-blue.png" alt="LIFX">
+                <span>LIFX Web2APK</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="builder.html"><i class="fas fa-cogs"></i> Builder</a></li>
+                <li><a href="docs.html" class="active"><i class="fas fa-book"></i> Dokumentasi</a></li>
+                <li><a href="status.html"><i class="fas fa-chart-bar"></i> Status</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="docs-container">
+            <!-- Sidebar -->
+            <aside class="docs-sidebar">
+                <div class="card">
+                    <div class="sidebar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Cari dokumentasi..." id="searchDocs">
+                    </div>
+                    
+                    <nav class="docs-nav">
+                        <div class="nav-section">
+                            <h4><i class="fas fa-rocket"></i> Mulai</h4>
+                            <ul>
+                                <li><a href="#intro" class="active">Pengenalan</a></li>
+                                <li><a href="#quickstart">Quick Start</a></li>
+                                <li><a href="#installation">Instalasi</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="nav-section">
+                            <h4><i class="fas fa-cogs"></i> Builder</h4>
+                            <ul>
+                                <li><a href="#html-input">Input HTML</a></li>
+                                <li><a href="#url-input">Input URL</a></li>
+                                <li><a href="#zip-input">Input ZIP</a></li>
+                                <li><a href="#configuration">Konfigurasi</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="nav-section">
+                            <h4><i class="fas fa-code"></i> API Reference</h4>
+                            <ul>
+                                <li><a href="#api-overview">Overview</a></li>
+                                <li><a href="#api-build">Build Endpoint</a></li>
+                                <li><a href="#api-status">Status Endpoint</a></li>
+                                <li><a href="#api-download">Download</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="nav-section">
+                            <h4><i class="fas fa-mobile-alt"></i> Android</h4>
+                            <ul>
+                                <li><a href="#android-permissions">Permissions</a></li>
+                                <li><a href="#android-webview">WebView Config</a></li>
+                                <li><a href="#android-signing">Signing APK</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="nav-section">
+                            <h4><i class="fas fa-question-circle"></i> Troubleshooting</h4>
+                            <ul>
+                                <li><a href="#common-issues">Common Issues</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#support">Support</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="docs-content">
+                <!-- Introduction -->
+                <section id="intro" class="doc-section">
+                    <h1>📚 Dokumentasi LIFX Web2APK</h1>
+                    <p class="lead">Selamat datang di dokumentasi resmi LIFX Web2APK. Platform ini memungkinkan Anda mengubah kode HTML, website, atau file ZIP menjadi aplikasi Android (APK) yang nyata dan siap diinstal.</p>
+                    
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Versi 13.0</strong> - Terakhir diperbarui: 6 Maret 2026
+                    </div>
+                </section>
+
+                <!-- Quick Start -->
+                <section id="quickstart" class="doc-section">
+                    <h2>🚀 Quick Start</h2>
+                    <p>Ikuti 3 langkah mudah berikut untuk membuat APK pertama Anda:</p>
+                    
+                    <div class="steps-vertical">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Siapkan HTML</h3>
+                                <p>Pastikan HTML Anda sudah responsive untuk tampilan mobile. Gunakan viewport meta tag:</p>
+                                <pre><code class="language-html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Upload ke Builder</h3>
+                                <p>Buka halaman <a href="builder.html">Builder</a>, pilih metode input (HTML/URL/ZIP), dan masukkan source code Anda.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Generate APK</h3>
+                                <p>Klik tombol "GENERATE APK", tunggu 30-60 detik, dan download APK Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- HTML Input -->
+                <section id="html-input" class="doc-section">
+                    <h2>📄 Input HTML</h2>
+                    <p>Anda dapat langsung menempelkan kode HTML ke dalam text area. Berikut contoh struktur HTML yang baik:</p>
+                    
+                    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My App&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my app&lt;/p&gt;
+    &lt;script&gt;
+        console.log('App loaded');
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                    <div class="tip">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Tip:</strong> Gunakan CSS inline atau internal untuk hasil terbaik. Hindari link ke file eksternal jika tidak diperlukan.
+                    </div>
+                </section>
+
+                <!-- URL Input -->
+                <section id="url-input" class="doc-section">
+                    <h2>🔗 Input URL</h2>
+                    <p>Jika website Anda sudah online, cukup masukkan URL-nya. Sistem akan mendownload seluruh h beserta asetnya.</p>
+                    
+                    <h3>Contoh URL yang valid:</h3>
+                    <ul>
+                        <li><code>https://example.com</code></li>
+                        <li><code>https://myapp.netlify.app</code></li>
+                        <li><code>https://localhost:3000</code> (untuk development)</li>
+                    </ul>
+                    
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>Catatan:</strong> Pastikan website Anda dapat diakses publik. Jika menggunakan localhost, gunakan tunneling seperti ngrok.
+                    </div>
+                </section>
+
+                <!-- ZIP Input -->
+                <section id="zip-input" class="doc-section">
+                    <h2>📦 Input ZIP</h2>
+                    <p>Upload file ZIP yang berisi seluruh file website Anda. Struktur folder yang direkomendasikan:</p>
+                    
+                    <pre><code>my-app.zip
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── images/
+    ├── logo.png
+    └── icon.png</code></pre>
+
+                    <p>Pastikan file utama bernama <code>index.html</code> dan berada di root folder.</p>
+                </section>
+
+                <!-- API Reference -->
+                <section id="api-overview" class="doc-section">
+                    <h2>🔌 API Reference</h2>
+                    <p>LIFX Web2APK menyediakan REST API untuk integrasi dengan aplikasi lain.</p>
+                    
+                    <h3>Base URL</h3>
+                    <pre><code>https://apk.lifx.com/api</code></pre>
+                    
+                    <h3>Authentication</h3>
+                    <p>Semua request ke API memerlukan API key yang dikirim via header:</p>
+                    <pre><code>X-API-Key: your-api-key-here</code></pre>
+                </section>
+
+                <!-- Build Endpoint -->
+                <section id="api-build" class="doc-section">
+                    <h3>POST /build</h3>
+                    <p>Endpoint untuk membuat APK baru.</p>
+                    
+                    <h4>Request (multipart/form-data)</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Type</th>
+                                <th>Required</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>action</td>
+                                <td>string</td>
+                                <td>yes</td>
+                                <td>build_html / build_url / build_zip</td>
+                            </tr>
+                            <tr>
+                                <td>app_name</td>
+                                <td>string</td>
+                                <td>yes</td>
+                                <td>Nama aplikasi</td>
+                            </tr>
+                            <tr>
+                                <td>package_name</td>
+                                <td>string</td>
+                                <td>yes</td>
+                                <td>Package name (com.example.app)</td>
+                            </tr>
+                            <tr>
+                                <td>html</td>
+                                <td>string</td>
+                                <td>for action=build_html</td>
+                                <td>HTML content</
