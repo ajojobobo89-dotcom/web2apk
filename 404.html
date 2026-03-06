@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | LIFX Web2APK</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 10px 30px rgba(0,102,204,0.3);
+        }
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gray-800);
+        }
+        .error-message {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-blue.png" alt="LIFX">
+                <span>LIFX Web2APK</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="builder.html">Builder</a></li>
+                <li><a href="docs.html">Dokumentasi</a></li>
+                <li><a href="status.html">Status</a></li>
+                <li><a href="profile.html">Profil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="error-container">
+            <div>
+                <div class="error-code">404</div>
+                <h1 class="error-title">Page Not Found</h1>
+                <p class="error-message">The page you are looking for doesn't exist or has been moved.</p>
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                    <a href="builder.html" class="btn btn-outline">
+                        <i class="fas fa-cogs"></i> Build APK
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 LIFX Web2APK. Created by @lifxcodetZ</p>
+        </div>
+    </footer>
+</body>
+                  </html>
