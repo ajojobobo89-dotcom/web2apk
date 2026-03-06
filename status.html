@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFX Web2APK - Status & History</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/status.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-blue.png" alt="LIFX">
+                <span>LIFX Web2APK</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="builder.html"><i class="fas fa-cogs"></i> Builder</a></li>
+                <li><a href="docs.html"><i class="fas fa-book"></i> Dokumentasi</a></li>
+                <li><a href="status.html" class="active"><i class="fas fa-chart-bar"></i> Status</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1><i class="fas fa-chart-bar"></i> Server Status & History</h1>
+            <p>Pantau performa server dan lihat riwayat build Anda</p>
+        </div>
+
+        <!-- System Status -->
+        <div class="status-grid">
+            <div class="status-card">
+                <div class="status-icon"><i class="fas fa-server"></i></div>
+                <div class="status-info">
+                    <h3>Server Status</h3>
+                    <div class="status-value online">
+                        <span class="status-dot"></span> Online
+                    </div>
+                </div>
+            </div>
+            
+            <div class="status-card">
+                <div class="status-icon"><i class="fas fa-clock"></i></div>
+                <div class="status-info">
+                    <h3>Uptime</h3>
+                    <div class="status-value" id="uptime">99.97%</div>
+                </div>
+            </div>
+            
+            <div class="status-card">
+                <div class="status-icon"><i class="fas fa-tachometer-alt"></i></div>
+                <div class="status-info">
+                    <h3>Response Time</h3>
+                    <div class="status-value" id="responseTime">124ms</div>
+                </div>
+            </div>
+            
+            <div class="status-card">
+                <div class="status-icon"><i class="fas fa-database"></i></div>
+                <div class="status-info">
+                    <h3>Database</h3>
+                    <div class="status-value online">Connected</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Status -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-plug"></i> API Status</h3>
+                <span class="badge badge-success">All Systems Operational</span>
+            </div>
+            
+            <div class="api-status-list">
+                <div class="api-status-item">
+                    <div class="api-info">
+                        <h4>Web2APK.com API</h4>
+                        <span class="status-badge success">Operational</span>
+                    </div>
+                    <div class="api-meta">
+                        <span>Latency: 87ms</span>
+                        <span>Uptime: 99.99%</span>
+                    </div>
+                </div>
+                
+                <div class="api-status-item">
+                    <div class="api-info">
+                        <h4>AppYet.com API</h4>
+                        <span class="status-badge success">Operational</span>
+                    </div>
+                    <div class="api-meta">
+                        <span>Latency: 112ms</span>
+                        <span>Uptime: 99.95%</span>
+                    </div>
+                </div>
+                
+                <div class="api-status-item">
+                    <div class="api-info">
+                        <h4>MIT App Inventor</h4>
+                        <span class="status-badge warning">Degraded</span>
+                    </div>
+                    <div class="api-meta">
+                        <span>Latency: 345ms</span>
+                        <span>Uptime: 98.2%</span>
+                    </div>
+                </div>
+                
+                <div class="api-status-item">
+                    <div class="api-info">
+                        <h4>Custom Server</h4>
+                        <span class="status-badge success">Operational</span>
+                    </div>
+                    <div class="api-meta">
+                        <span>Latency: 56ms</span>
+                        <span>Uptime: 100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="charts-row">
+            <div class="chart-card">
+                <h4>Builds per Hour</h4>
+                <canvas id="hourlyChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h4>Success Rate</h4>
+                <canvas id="successChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h4>Response Time</h4>
+                <canvas id="latencyChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="stats-grid-detailed">
+            <div class="stat-item">
+                <div class="stat-label">Total Builds</div>
+                <div class="stat-number">127,432</div>
+                <div class="stat-trend up">+12.3%</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Today</div>
+                <div class="stat-number">5,847</div>
+                <div class="stat-trend up">+5.2%</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Success Rate</div>
+                <div class="stat-number">98.7%</div>
+                <div class="stat-trend up">+0.5%</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Avg Build Time</div>
+                <div class="stat-number">42s</div>
+                <div class="stat-trend down">-3s</div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-history"></i> Riwayat Build</h3>
+                <div class="header-actions">
+                    <button class="btn btn-sm btn-outline" onclick="exportHistory()">
+                        <i class="fas fa-download"></i> Export
+                    </button>
+                    <button class="btn btn-sm btn-outline" onclick="clearHistory()">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Cari berdasarkan nama atau package..." id="searchHistory">
+                </div>
+                <select id="filterStatus">
+                    <option value="all">Semua Status</option>
+                    <option value="success">Success</option>
+                    <option value="failed">Failed</option>
+                    <option value="pending">Pending</option>
+                </select>
+                <select id="filterDate">
+                    <option value="today">Hari Ini</option>
+                    <option value="week">Minggu Ini</option>
+                    <option value="month">Bulan Ini</option>
+                    <option value="all" selected>Semua</option>
+                </select>
+            </div>
+
+            <!-- History Table -->
+            <div class="table-responsive">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama App</th>
+                            <th>Package</th>
+                            <th>Tanggal</th>
+                            <th>Ukuran</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <strong>LIFX App</strong><br>
+                                <small class="text-muted">v1.0.0</small>
+                            </td>
+                            <td>com.lifx.app</td>
+                            <td>2026-03-06 14:23</td>
+                            <td>3.2 MB</td>
+                            <td><span class="badge-success">Success</span></td>
+                            <td>
+                                <button class="btn-icon" onclick="downloadAPK('1')"><i class="fas fa-download"></i></button>
+                                <button class="btn-icon" onclick="viewDetails('1')"><i class="fas fa-info-circle"></i></button>
+                                <button class="btn-icon" onclick="deleteHistory('1')"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <strong>Game Template</strong><br>
+                                <small class="text-muted">v2.1.0</small>
+                            </td>
+                            <td>com.lifx.game</td>
+                            <td>2026-03-06 12:05</td>
+                            <td>5.7 MB</td>
+                            <td><span class="badge-success">Success</span></td>
+                            <td>
+                                <button class="btn-icon"><i class="fas fa-download"></i></button>
+                                <button class="btn-icon"><i class="fas fa-info-circle"></i></button>
+                                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <strong>Business Tool</strong><br>
+                                <small class="text-muted">v1.0.5</small>
+                            </td>
+                            <td>com.lifx.biz</td>
+                            <td>2026-03-06 09:30</td>
+                            <td>4.1 MB</td>
+                            <td><span class="badge-warning">Pending</span></td>
+                            <td>
+                                <button class="btn-icon"><i class="fas fa-spinner"></i></button>
+                                <button class="btn-icon"><i class="fas fa-info-circle"></i></button>
+                                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <strong>Calculator App</strong><br>
+                                <small class="text-muted">v1.0.0</small>
+                            </td>
+                            <td>com.lifx.calc</td>
+                            <td>2026-03-05 22:15</td>
+                            <td>2.8 MB</td>
+                            <td><span class="badge-danger">Failed</span></td>
+                            <td>
+                                <button class="btn-icon"><i class="fas fa-redo"></i></button>
+                                <button class="btn-icon"><i class="fas fa-info-circle"></i></button>
+                                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <strong>Weather App</strong><br>
+                                <small class="text-muted">v3.2.1</small>
+                            </td>
+                            <td>com.lifx.weather</td>
+                            <td>2026-03-05 18:45</td>
+                            <td>4.5 MB</td>
+                            <td><span class="badge-success">Success</span></td>
+                            <td>
+                                <button class="btn-icon"><i class="fas fa-download"></i></button>
+                                <button class="btn-icon"><i class="fas fa-info-circle"></i></button>
+                                <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <span class="page-info">Halaman 1 dari 10</span>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-activity"></i> Recent Activity</h3>
+            </div>
+            
+            <div class="activity-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot success"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">2 menit lalu</span>
+                        <h4>APK Generated Successfully</h4>
+                        <p>LIFX App v1.0.0 - 3.2 MB</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot warning"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">15 menit lalu</span>
+                        <h4>Build Pending</h4>
+                        <p>Game Template v2.1.0 - Dalam antrian</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot success"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">1 jam lalu</span>
+                        <h4>Server Update</h4>
+                        <p>Android SDK updated to version 33</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot danger"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">3 jam lalu</span>
+                        <h4>Build Failed</h4>
+                        <p>Calculator App - HTML syntax error</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot success"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">5 jam lalu</span>
+                        <h4>New API Connected</h4>
+                        <p>AppYet.com API integration successful</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 LIFX Web2APK. Created by @lifxcodetZ</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/status.js"></script>
+</body>
+</html>
