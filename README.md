@@ -1,7 +1,7 @@
   <!-- Tombol yang bisa diklik - HTML version untuk GitHub -->
 
   <a href="https://catlifx.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/🎮%20CLICK%20ME!%20-%20Cat%20LIFX%20Website%20🐱%20-%23007BFF?style=for-the-badge&logo=react&logoColor=white&labelColor=6A0DAD" alt="Click Me" width="600">
+    <img src="https://img.shields.io/badge/%20CLICK%20ME!%20-%20Cat%20LIFX%20Website%20%20-%23007BFF?style=for-the-badge&logo=react&logoColor=white&labelColor=6A0DAD" alt="Click Me" width="600">
   </a>
 
 ---
@@ -9,7 +9,7 @@
 <div align="center">
   <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Funny Cat Coding" width="400">
 
-<h3><i>"welcome to github me lifxcodetZ!"</i> 😺</h3>
+<h3><i>"welcome to github me lifxcodetZ!"</i> 🤡</h3>
 
   <img src="https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python" alt="Python Version">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
@@ -25,8 +25,8 @@
 
 ---
 <div align="center">
-  <p><b>Sebelum kita mulai ngoding, mampir dulu ke website kucing saya! 🐱</b></p>
+  <p><b>Sebelum kita mulai ngoding, mampir dulu ke website kucing saya! 🤡</b></p>
 
   <a href="https://catlifx.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/🚀%20KUNJUNGI-CATLIFX.VERCEL.APP-ff69b4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=black" alt="Visit CatLIFX" width="500">
+    <img src="https://img.shields.io/badge/%20KUNJUNGI-CATLIFX.VERCEL.APP-ff69b4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=black" alt="Visit CatLIFX" width="500">
   </a>
