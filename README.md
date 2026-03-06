@@ -1,45 +1,49 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/VERSION-1.0.0-blue?style=for-the-badge" alt="Version">
-  <img src="https://img.shields.io/badge/RELEASE-2025-success?style=for-the-badge" alt="Release">
-  <img src="https://img.shields.io/badge/STABLE-green?style=for-the-badge" alt="Stable">
+  <img src="https://img.shields.io/badge/VERSION-1.0.0-blue?style=for-the-badge&logo=github" alt="Version">
+  <img src="https://img.shields.io/badge/RELEASE-2025-success?style=for-the-badge" alt="Release Year">
+  <img src="https://img.shields.io/badge/STABLE-brightgreen?style=for-the-badge" alt="Stable">
 </p>
 
-<h1 align="center">THANKS FOR</h1>
+<h1 align="center">WELCOME TO MY GITHUB 🚀</h1>
 
 <p align="center">
-  <b>WELCOME TO MY GITHUB REPO</b><br>
-  LIFXCODETZ • VERSION 1.0.0 • STABLE RELEASE 2025
+  <b>LIFXCODETZ • VERSION 1.0.0 • STABLE RELEASE 2025</b><br>
+  THANKS FOR VISITING!
 </p>
 
 ---
 
 ### Version Info
 ⭐ **VERSION 1.0.0** ⭐  
-WELCOME TO GITHUB ME  
-LIFXCODETZ ★ RELEASE 2025 ★ LIFXCODETZ  
-**Build:** ![Passing](https://img.shields.io/badge/Build-Passing-brightgreen)  
-**Version:** 1.0.0  
-**License:** MIT  
-**Platform:** GitHub
+Build: ![Passing](https://img.shields.io/badge/Build-Passing-brightgreen)  
+License: ![MIT](https://img.shields.io/badge/License-MIT-orange)  
+Platform: GitHub
 
 ### Changelog
 
-| Version | Release Date | Status          | Changes            |
-|---------|--------------|-----------------|--------------------|
-| 1.0.0   | 2025         | ✅ Stable       | Initial Release    |
-| 0.9.0   | 2024         | ⏳ Beta         | Testing Phase      |
+| Version | Release Date | Status     | Changes          |
+|---------|--------------|------------|------------------|
+| 1.0.0   | 2025         | ✅ Stable  | Initial Release  |
+| 0.9.0   | 2024         | ⏳ Beta    | Testing Phase    |
 
 ### Features
-🔥 VERSION 1.0.0 LIFXCODETZ GITHUB 🔥  
-STABLE RELEASE 2025 ★ WELCOME TO GITHUB ME  
-LIFXCODETZ ★ VERSION 1.0.0 ★
+🔥 LIFXCODETZ GITHUB STABLE RELEASE 2025 🔥  
+VERSION 1.0.0 • WELCOME TO MY REPO • LIFXCODETZ
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v1.0.0-2025-blue" alt="v1">
-  <img src="https://img.shields.io/badge/LIFXCODETZ-orange" alt="codetz">
-  <img src="https://img.shields.io/badge/MIT%20License-gray" alt="license">
+  <img src="https://img.shields.io/badge/v1.0.0-2025-blue" alt="v1.0.0">
+  <img src="https://img.shields.io/badge/LIFXCODETZ-orange" alt="LIFXCODETZ">
 </p>
 
 ---
 
-**Terima kasih sudah berkunjung!** 🚀
+**Biar gak error lagi:**
+- Pakai `<p align="center">` atau `<div align="center">` buat center (masih aman).
+- Badge → selalu dari https://shields.io (generate sendiri).
+- Jangan pakai `<center>`, `<font>`, style apa pun.
+- Table: pastiin header, `|---|`, dan sel selaras.
+- Preview dulu di https://markdownlivepreview.com atau VS Code.
+
+Commit & push ulang → langsung cek di repo. Kalau masih rusak, paste **isi RAW README.md** kamu di sini (buka repo → README → klik "Raw" → copy semua teksnya). Biar bisa dicek mana baris yang bandel.
+
+Semangat fix-nya, bujang! Nanti kalau udah beres, README-nya bakal kinclong banget. 💪
