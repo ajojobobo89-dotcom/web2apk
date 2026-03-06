@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - php
+    networks:
+      - lifx-network
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/html
+      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
+    environment:
+      - ANDROID_SDK_PATH=/opt/android-sdk
+    networks:
+      - lifx-network
+
+  cron:
+    image: alpine
+    volumes:
+      - ./:/var/www/html
+      - ./scripts/cleanup.sh:/cleanup.sh
+    command: sh -c "echo '0 * * * * /cleanup.sh' | crontab - && crond -f"
+    networks:
+      - lifx-network
+
+networks:
+  lifx-network:
+    driver: bridge
