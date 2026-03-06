@@ -19,5 +19,6 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=35&lines=🐱‍👤+GLITCH+EFFECT+ACTIVE+🐱‍👤;⚡+MUKA+KUCING+DARK+HACKER+⚡;💻+LIFXCODETZ+IS+ONLINE+💻"
+  <img src="[https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=35&lines=🐱‍👤](https://image2url.com/r2/default/images/1772810693871-e51611bf-9358-4ecd-9296-03c44a065009.blob)
++GLITCH+EFFECT+ACTIVE+🐱‍👤;⚡+MUKA+KUCING+DARK+HACKER+⚡;💻+LIFXCODETZ+IS+ONLINE+💻"
 </p>
