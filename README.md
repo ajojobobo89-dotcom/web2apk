@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=100&pause=100&color=FF00FF&center=true&vCenter=true&width=435&lines=GLITCH+EFFECT;GLITCH+EFFECT;GLITCH+EFFECT;GLITCH+EFFECT" alt="Glitch Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=100&pause=100&color=FF00FF&center=true&vCenter=true&width=435&lines=GLITCH+EFFECT;GLITCH+EFFECT;GLITCH+EFFECT;GLITCH+EFFECT" alt="kelas ga boyy" />
 </p>
 
 <h1 align="center">
