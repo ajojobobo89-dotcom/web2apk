@@ -21,38 +21,3 @@
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=435&lines=🐱‍👤+GLITCH+EFFECT+ACTIVE+🐱‍👤;⚡+MUKA+KUCING+DARK+HACKER+⚡;💻+LIFXCODETZ+IS+ONLINE+💻" alt="Glitch Banner" />
 </p>
-
----
-
-## 📊 GITHUB STATS DENGAN ANIMASI:
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lifxcodetZ&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lifxcodetZ&theme=chartreuse-dark&hide_border=true&background=0D1117" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lifxcodetZ&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0D1117" />
-</p>
-
----
-
-## 🎮 ANIMASI GLITCH LAINNYA:
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lifxcodetZ&theme=matrix&no-frame=true&no-bg=true&column=7" />
-</p>
-
----
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=1&pause=1000&color=00FF00&center=true&vCenter=true&multiline=true&width=500&lines=Terima+kasih+sudah+mampir!;Jangan+lupa+follow+dan+star+⭐" alt="Thanks" />
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=lifxcodetZ&label=PROFILE+VIEWS&color=0f0&style=flat" />
-</p>
