@@ -36,14 +36,3 @@ VERSION 1.0.0 • WELCOME TO MY REPO • LIFXCODETZ
 </p>
 
 ---
-
-**Biar gak error lagi:**
-- Pakai `<p align="center">` atau `<div align="center">` buat center (masih aman).
-- Badge → selalu dari https://shields.io (generate sendiri).
-- Jangan pakai `<center>`, `<font>`, style apa pun.
-- Table: pastiin header, `|---|`, dan sel selaras.
-- Preview dulu di https://markdownlivepreview.com atau VS Code.
-
-Commit & push ulang → langsung cek di repo. Kalau masih rusak, paste **isi RAW README.md** kamu di sini (buka repo → README → klik "Raw" → copy semua teksnya). Biar bisa dicek mana baris yang bandel.
-
-Semangat fix-nya, bujang! Nanti kalau udah beres, README-nya bakal kinclong banget. 💪
