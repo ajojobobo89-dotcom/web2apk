@@ -18,3 +18,9 @@
 </p>
 
 ---
+<div align="center">
+  <p><b>Sebelum kita mulai ngoding, mampir dulu ke website kucing saya! 🐱</b></p>
+
+  <a href="https://catlifx.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20KUNJUNGI-CATLIFX.VERCEL.APP-ff69b4?style=for-the-badge&logo=vercel&logoColor=white&labelColor=black" alt="Visit CatLIFX" width="500">
+  </a>
