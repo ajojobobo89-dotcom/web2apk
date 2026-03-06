@@ -196,4 +196,70 @@
                             </label>
                         </div>
 
-                        <
+                        <div class="preference-item">
+                            <div class="pref-info">
+                                <h4>Telegram Notifications</h4>
+                                <p>Dapatkan notifikasi via Telegram bot</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="telegramNotif">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="preference-item">
+                            <div class="pref-info">
+                                <h4>Auto Cleanup</h4>
+                                <p>Hapus build lama otomatis setelah 30 hari</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="autoCleanup" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Danger Zone -->
+                <div class="card danger-zone">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-exclamation-triangle"></i> Danger Zone</h3>
+                    </div>
+
+                    <div class="danger-actions">
+                        <div class="danger-item">
+                            <div class="danger-info">
+                                <h4>Export All Data</h4>
+                                <p>Download semua data Anda termasuk history build dan API keys</p>
+                            </div>
+                            <button class="btn btn-outline" onclick="exportData()">
+                                <i class="fas fa-download"></i> Export
+                            </button>
+                        </div>
+
+                        <div class="danger-item">
+                            <div class="danger-info">
+                                <h4>Delete Account</h4>
+                                <p>Hapus akun Anda secara permanen. Tindakan ini tidak dapat dibatalkan.</p>
+                            </div>
+                            <button class="btn btn-danger" onclick="deleteAccount()">
+                                <i class="fas fa-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 LIFX Web2APK. Created by @lifxcodetZ</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/profile.js"></script>
+</body>
+</html>
