@@ -1,7 +1,9 @@
+---
+
 <div align="center">
   <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Funny Cat Coding" width="400">
 
-<h3><i>"Because even cats need smart lighting!"</i> 😺</h3>
+<h3><i>"welcome to github me lifxcodetZ!"</i> 😺</h3>
 
   <img src="https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python" alt="Python Version">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
@@ -11,8 +13,8 @@
 </div>
 
 <p align="center">
-  <b>🐾 Kontrol Lampu LIFX Anda dengan Mudah, Cepat, dan Kocak dari Kode Python!</b><br>
-  <i>"Paw-sitively the best LIFX library for Python!"</i> - Definitely Not a Cat
+  <b>🐾 github gua pake karena gabut ae</b><br>
+  <i>"badut tugas nya menghibur bukan mengatur!"</i> - kelazz
 </p>
 
 ---
