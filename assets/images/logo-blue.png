@@ -1,0 +1,7 @@
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="50" fill="white"/>
+    <path d="M30 25L40 15L50 25L40 35L30 25Z" fill="#0066CC"/>
+    <path d="M50 25L60 15L70 25L60 35L50 25Z" fill="#4DA6FF"/>
+    <text x="80" y="32" font-family="Arial" font-size="24" font-weight="bold" fill="#0066CC">LIFX</text>
+    <text x="140" y="32" font-family="Arial" font-size="16" fill="#666">Web2APK</text>
+</svg>
