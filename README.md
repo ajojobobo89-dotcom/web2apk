@@ -4,7 +4,7 @@
   
   <!-- Tombol yang bisa diklik - HTML version untuk GitHub -->
 
-  <a href="[https://catlifx.vercel.app](https://web2apk-wheat.vercel.app/)](https://web2apk-wheat.vercel.app/)" target="_blank">
+  <a href="[https://catlifx.vercel.app](https://web2apk-wheat.vercel.app/)](https://web2apk-wheat.vercel.app/)](https://web2apk-wheat.vercel.app/)" target="_blank">
     <img src="https://img.shields.io/badge/%20CLICK%20ME!%20-%20WEB%20LIFX%20Website%20%20-%23007BFF?style=for-the-badge&logo=react&logoColor=white&labelColor=6A0DAD" alt="Click Me" width="600">
   </a>
 
