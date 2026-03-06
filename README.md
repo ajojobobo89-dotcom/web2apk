@@ -19,5 +19,5 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=435&lines=🐱‍👤+GLITCH+EFFECT+ACTIVE+🐱‍👤;⚡+MUKA+KUCING+DARK+HACKER+⚡;💻+LIFXCODETZ+IS+ONLINE+💻" alt="Glitch Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=435&lines=🐱‍👤+GLITCH+EFFECT+ACTIVE+🐱‍👤;⚡+MUKA+KUCING+DARK+HACKER+⚡;💻+LIFXCODETZ+IS+ONLINE+💻"
 </p>
